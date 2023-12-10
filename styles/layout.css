@@ -130,12 +130,12 @@ html {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 100%;
+    height: 30%;
     overflow: hidden;
     z-index: 1;
     align-items: flex-end;
     width: 0vw;
-    right: -300px;
+    right: -20px;
     background-color: var(--primary-color);
 }
 

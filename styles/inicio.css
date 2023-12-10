@@ -6,6 +6,7 @@
     z-index: 0;
     bottom: 0px;
     right: 0px;
+    
 }
 
 .internet-icon {
@@ -18,6 +19,8 @@
     height: calc(100vh - 80px);
     max-width: 1280px;
     max-height: 956px;
+    width: 40vw;
+
 }
 
 #btn-contato {
@@ -37,7 +40,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-size: 1.5em;
+    font-size: 1.0em;
 }
 
 #infos-inicio {
@@ -48,6 +51,7 @@
     color: white;
     left: 10%;
     height: 100vh; 
+    width: 35vh;
     background-image: linear-gradient(to top, #16060f, #1f0d18, #271121, #2f142a, #371735, #3b183b, #3f1941, #431a48, #44184b, #45164f, #461452, #471256);  box-sizing: border-box;
  
 }
@@ -130,26 +134,39 @@
 @media only screen and (max-width: 1110px) {
     #inicio {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-        padding-bottom: 350px;
+        padding-bottom: 1px;
+        height: auto;
+        /* Reduzindo o padding para ajustar melhor na tela */
     }
 
     #infos-inicio {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center; 
+        /* Evitando altura fixa para se ajustar dinamicamente */
+    }
+    #div-img {
+        display: flex;
+        flex-direction: column;
         align-items: center;
-
+        z-index: 1;
+        position: relative;
+        bottom: 0;
+        right: 0;
+        margin-top: 20px;
     }
 
     #img-eu {
-        width: 110vw;
-        height: calc(100vh - 50vh);
+        width: 70vw;
+        max-width: 100%;
+        height: auto;
     }
-
+   
     .social-medias {
         position: fixed;
         bottom: 25px;
